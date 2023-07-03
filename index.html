@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="FLUENCY is a language school aimed at students and working professionals offering English language learning around the world."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="images/icons/favicon-16.png" />
+    <link rel="apple-touch-icon" href="images/icons/favicon-180.png" />
+    <link rel="manifest" href="manifest.json" />
+    <link rel="stylesheet" href="styles/general.css" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/queries.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin=""
+    />
+    <script
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+      crossorigin=""
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/899ac1343d.js"
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="script.js"></script>
+    <title>FLUENCY – Online English lessons</title>
+  </head>
+  <body>
+    <div id="top"></div>
+    <header class="header" id="header">
+      <a href="#top"
+        ><img
+          class="company__logo"
+          src="images/icons/logo.png"
+          alt="Fluency logo"
+          loading="lazy"
+      /></a>
+      <nav class="main__nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a class="nav__link" href="#features">Features</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#reviews">Reviews</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#pricelist">Pricing</a>
+          </li>
+          <li class="nav__item"><a class="nav__link" href="#faq">F.A.Q.</a></li>
+          <li class="nav__item">
+            <a class="btn btn--tryout nav__link" href="#cta">Try out</a>
+          </li>
+          <li class="nav__item">
+            <a class="btn btn--login" href="/LogIn/login.html"
+              >Log in<svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="icon--login"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M15.75 9V5.25A2.25 2.25 0 0013.5 3h-6a2.25 2.25 0 00-2.25 2.25v13.5A2.25 2.25 0 007.5 21h6a2.25 2.25 0 002.25-2.25V15m3 0l3-3m0 0l-3-3m3 3H9"
+                />
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <button class="btn__mobile--nav" name="menu_button">
+        <i class="fa-solid fa-bars icon--menu"></i>
+        <i class="fa-solid fa-xmark icon--close"></i>
+      </button>
+    </header>
+    <main>
+      <section class="section section__hero" id="hero">
+        <div class="hero__container">
+          <div class="hero__text--container">
+            <h1 class="hero__title">
+              <span class="highlight__red">Unlock</span> your English speaking
+              potential
+            </h1>
+            <p class="hero__description">
+              Communicate in English with top-tier teachers and native speakers.
+              Forget about boring grammar and listening exercises, learn English
+              while speaking!
+            </p>
+            <div class="hero__buttons">
+              <a class="btn btn--start nav__link" href="#cta">Start now</a>
+              <a class="btn btn--info nav__link" href="#features"
+                >Learn more <span>&rarr;</span></a
+              >
+            </div>
+          </div>
+          <div class="hero__img--container"></div>
+        </div>
+      </section>
+      <section class="section section__partner">
+        <div class="partner__container">
+          <h3 class="section__title partner__title">
+            Trusted by <span class="highlight__purple">+5,000</span> customers
+          </h3>
+          <div class="partner__logos">
+            <img
+              class="partner__logo partner__logo--puma"
+              src="images/logos/puma.png"
+              alt="Puma logo"
+              loading="lazy"
+            />
+            <img
+              class="partner__logo partner__logo--raiffeisen"
+              src="images/logos/raiffeisen.png"
+              alt="Raiffeisen logo"
+              loading="lazy"
+            /><img
+              class="partner__logo partner__logo--nike"
+              src="images/logos/nike.png"
+              alt="Nike logo"
+              loading="lazy"
+            /><img
+              class="partner__logo partner__logo--wolt"
+              src="images/logos/wolt.png"
+              alt="Wolt logo"
+              loading="lazy"
+            /><img
+              class="partner__logo partner__logo--paypal"
+              src="images/logos/paypal.png"
+              alt="PayPal logo"
+              loading="lazy"
+            />
+            <img
+              class="partner__logo partner__logo--bolt"
+              src="images/logos/bolt.png"
+              alt="Bolt logo"
+              loading="lazy"
+            /><img
+              class="partner__logo partner__logo--wu"
+              src="images/logos/wu.png"
+              alt="Western Union logo"
+              loading="lazy"
+            />
+          </div>
+        </div>
+      </section>
+      <section class="section section__features" id="features">
+        <div>
+          <h2 class="section__heading feature__heading">Features</h2>
+          <h3 class="section__title feature__title">
+            Learn the English you <span class="highlight__red">need</span>
+          </h3>
+          <p class="feature__text">
+            Boost your career, travel abroad, pass an exam and much more.
+            Included with all our plans are vibrant lessons where you’ll learn
+            hands-on, practical skills and quickly grow confidence in English.
+            Your teachers will help you speak and live English.
+          </p>
+        </div>
+        <div class="feature__container">
+          <div class="feature__image"></div>
+          <div class="feature__list">
+            <ul class="feature__list--items">
+              <li class="feature__list--item">
+                <i class="fa-solid fa-check feature__icon"></i>
+                <span>Level Placement Test</span>
+              </li>
+              <li class="feature__list--item">
+                <i class="fa-solid fa-check feature__icon"></i
+                ><span>25-minute classes online</span>
+              </li>
+              <li class="feature__list--item">
+                <i class="fa-solid fa-check feature__icon"></i
+                ><span>Classes one-to-one</span>
+              </li>
+              <li class="feature__list--item">
+                <i class="fa-solid fa-check feature__icon"></i
+                ><span>Personal study plan</span>
+              </li>
+              <li class="feature__list--item">
+                <i class="fa-solid fa-check feature__icon"></i
+                ><span>Business English lessons</span>
+              </li>
+              <li class="feature__list--item">
+                <i class="fa-solid fa-check feature__icon"></i
+                ><span>Travel English lessons</span>
+              </li>
+              <li class="feature__list--item">
+                <i class="fa-solid fa-check feature__icon"></i
+                ><span>Flexibility 24/7</span>
+              </li>
+
+              <li class="feature__list--item">
+                <i class="fa-solid fa-check feature__icon"></i
+                ><span>Native English speakers</span>
+              </li>
+              <li class="feature__list--item">
+                <i class="fa-solid fa-check feature__icon"></i
+                ><span>Study anywhere</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="section section__testimonials" id="reviews">
+        <h2 class="section__heading testimonial__heading">Reviews</h2>
+        <h3 class="section__title testimonial__title">
+          Hear what our students say
+        </h3>
+        <div class="testimonial__buttons">
+          <button
+            class="btn testimonial__btn testimonial__btn--left"
+            name="left__button"
+          >
+            <i class="fa-solid fa-chevron-left icon--left"></i>
+          </button>
+          <button
+            class="btn testimonial__btn testimonial__btn--right"
+            name="right__button"
+          >
+            <i class="fa-solid fa-chevron-right icon--right"></i>
+          </button>
+        </div>
+        <div class="testimonial__container">
+          <div class="testimonial__slider">
+            <div class="testimonial" data-testimonial="1">
+              <img
+                class="testimonial__image"
+                src="images/students/sara-alvarez.jpg"
+                alt="Sara Alvarez"
+                loading="lazy"
+              />
+              <div class="testimonial__text">
+                <div class="testimonial__icons">
+                  <i class="fa-solid fa-quote-left icon--quote"></i>
+                  <i class="fa-solid fa-quote-right icon--quote"></i>
+                </div>
+                <blockquote class="testimonial__quote">
+                  This is a really well-structured course, it manages to make
+                  language learning really fun. It's perfect for university
+                  students or anyone who needs a flexible course. The teachers
+                  are so nice and knowledgeable and there are many activities
+                  and lots of materials you can practice your English with.
+                </blockquote>
+                <div class="testimonial__credentials">
+                  <p class="testimonial__name">Sara Alvarez</p>
+                  <p class="testimonial__occupation">Marketing Specialist</p>
+                </div>
+              </div>
+            </div>
+            <div class="testimonial" data-testimonial="2">
+              <img
+                class="testimonial__image"
+                src="images/students/juan-padilla.jpg"
+                alt="Juan Padilla"
+              />
+
+              <div class="testimonial__text">
+                <div class="testimonial__icons">
+                  <i class="fa-solid fa-quote-left icon--quote"></i>
+                  <i class="fa-solid fa-quote-right icon--quote"></i>
+                </div>
+                <blockquote class="testimonial__quote">
+                  I'm so happy I got to learn English with such a great company.
+                  The courses were very informative, fun and interactive. The
+                  individual lessons were so enriching and constructive. It
+                  allowed me to talk to teachers from all over the world, it was
+                  magic!
+                </blockquote>
+                <p class="testimonial__name">Juan Padilla</p>
+                <p class="testimonial__occupation">Chief Financial Officer</p>
+              </div>
+            </div>
+            <div class="testimonial" data-testimonial="3">
+              <img
+                class="testimonial__image"
+                src="images/students/anna-stromberg.jpg"
+                alt="Anna Stromberg"
+              />
+
+              <div class="testimonial__text">
+                <div class="testimonial__icons">
+                  <i class="fa-solid fa-quote-left icon--quote"></i>
+                  <i class="fa-solid fa-quote-right icon--quote"></i>
+                </div>
+                <blockquote class="testimonial__quote">
+                  I have attempted to learn English for many years in several
+                  different ways, but by far this has been the best. Not only is
+                  it 1-on-1 but the tutors on this website personalize your
+                  learning plan with what works best for you.
+                </blockquote>
+                <p class="testimonial__name">Anna Stromberg</p>
+                <p class="testimonial__occupation">QA Analyst</p>
+              </div>
+            </div>
+            <div class="testimonial" data-testimonial="4">
+              <img
+                class="testimonial__image"
+                src="images/students/laura-schwarzmuller.jpg"
+                alt="Laura Schwarzmuller"
+              />
+
+              <div class="testimonial__text">
+                <div class="testimonial__icons">
+                  <i class="fa-solid fa-quote-left icon--quote"></i>
+                  <i class="fa-solid fa-quote-right icon--quote"></i>
+                </div>
+                <blockquote class="testimonial__quote">
+                  Finding this site has been wonderful for me. The lesson
+                  materials and tutors have been so good at helping my
+                  confidence and skills. I can't say enough good things. I would
+                  recommend this to anyone who wants to improve their language
+                  skills.
+                </blockquote>
+                <p class="testimonial__name">Laura Schwarzmuller</p>
+                <p class="testimonial__occupation">HR Manager</p>
+              </div>
+            </div>
+            <div class="testimonial" data-testimonial="5">
+              <img
+                class="testimonial__image"
+                src="images/students/camilla-rodriguez.jpg"
+                alt="Camilla Rodriguez"
+              />
+
+              <div class="testimonial__text">
+                <div class="testimonial__icons">
+                  <i class="fa-solid fa-quote-left icon--quote"></i>
+                  <i class="fa-solid fa-quote-right icon--quote"></i>
+                </div>
+                <blockquote class="testimonial__quote">
+                  The site has provided me with an amazing learning opportunity.
+                  The payment is safe and you're sure you're going to get your
+                  lesson as each one has to be confirmed by you as a student
+                  once it's finished. I love my lessons and I'm sure I'm going
+                  to continue learning with 'Fluency'!
+                </blockquote>
+                <p class="testimonial__name">Camilla Rodriguez</p>
+                <p class="testimonial__occupation">Accountant</p>
+              </div>
+            </div>
+            <div class="testimonial" data-testimonial="6">
+              <img
+                class="testimonial__image"
+                src="images/students/jonas-valanciunas.jpg"
+                alt="Jonas Valanciunas"
+              />
+              <div class="testimonial__text">
+                <div class="testimonial__icons">
+                  <i class="fa-solid fa-quote-left icon--quote"></i>
+                  <i class="fa-solid fa-quote-right icon--quote"></i>
+                </div>
+                <blockquote class="testimonial__quote">
+                  Before I signed up for the online course I didn't understand
+                  English very well, especially during conversations. But I
+                  needed to learn English fast and thanks to FLUENCY I feel like
+                  I've made a lot of progress. I speak and understand English
+                  much better than before. 100% recommended.
+                </blockquote>
+                <div class="testimonial__credentials">
+                  <p class="testimonial__name">Jonas Valanciunas</p>
+                  <p class="testimonial__occupation">Sales Director</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial__slides">
+          <div class="testimonial__slide slide--active" data-slide="0"></div>
+          <div class="testimonial__slide" data-slide="1"></div>
+          <div class="testimonial__slide" data-slide="2"></div>
+          <div class="testimonial__slide" data-slide="3"></div>
+        </div>
+      </section>
+      <section class="section section__pricelist" id="pricelist">
+        <h2 class="pricelist__heading section__heading">prices</h2>
+        <div class="pricelist__container">
+          <div class="pricelist__card">
+            <p class="pricelist__title">1 month (8 classes)</p>
+            <div class="pricelist__prices">
+              <div class="price--lesson">
+                <p>€11.99</p>
+                <span>per lesson</span>
+              </div>
+              <div class="price--border"></div>
+              <div class="price--month">
+                <p>€95.92</p>
+                <span>per month</span>
+              </div>
+            </div>
+            <ul class="pricelist__benefits">
+              <li>
+                <i class="fa-solid fa-check icon--price"></i>2 lessons per week
+              </li>
+            </ul>
+          </div>
+
+          <div class="pricelist__card">
+            <p class="pricelist__title">3 months (24 classes)</p>
+            <div class="pricelist__prices">
+              <div class="price--lesson">
+                <p>€10.99</p>
+                <span>per lesson</span>
+              </div>
+              <div class="price--border"></div>
+              <div class="price--month">
+                <p>€87.92</p>
+                <span>per month</span>
+              </div>
+            </div>
+            <ul class="pricelist__benefits">
+              <li>
+                <i class="fa-solid fa-check icon--price"></i>2 lessons per week
+              </li>
+              <li>
+                <i class="fa-solid fa-check icon--price"></i>One time payment
+              </li>
+            </ul>
+          </div>
+          <div class="pricelist__card">
+            <p class="pricelist__title">6 months (48 classes)</p>
+            <div class="pricelist__prices">
+              <div class="price--lesson">
+                <p>€9.99</p>
+                <span>per lesson</span>
+              </div>
+              <div class="price--border"></div>
+              <div class="price--month">
+                <p>€79.92</p>
+                <span>per month</span>
+              </div>
+            </div>
+            <ul class="pricelist__benefits">
+              <li>
+                <i class="fa-solid fa-check icon--price"></i>2 lessons per week
+              </li>
+              <li>
+                <i class="fa-solid fa-check icon--price"></i>Instalment payment
+                available
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="section__cta section" id="cta">
+        <div class="cta__container">
+          <div class="cta__container--left">
+            <h3 class="cta__title section__title">
+              Get your first trial class for
+              <span class="highlight__red">free</span>!
+            </h3>
+            <p class="cta__description">
+              Interesting, interactive and well-developed classes are waiting
+              for you. Start learning and speaking English today! The first
+              class is on us!
+            </p>
+            <form
+              action=""
+              class="cta__form"
+              id="form--trial"
+              name="form--trial"
+            >
+              <div class="form__control">
+                <div>
+                  <label for="firstName">First name</label>
+                  <input type="text" id="firstName" required />
+                </div>
+                <div>
+                  <label for="lastName">Last name</label>
+                  <input type="text" id="lastName" required />
+                </div>
+              </div>
+              <div class="form__control">
+                <label for="email">Email address</label>
+                <input type="email" id="email" required />
+              </div>
+              <div class="form__control">
+                <label for="number">Phone number</label>
+                <input type="number" id="number" required />
+              </div>
+
+              <div class="form__control">
+                <label for="trial-options"
+                  >Where did you hear about us?
+                  <select name="trial-options" id="trial-options">
+                    <option value="" selected disabled>
+                      Please choose one option:
+                    </option>
+                    <option value="">LinkedIn</option>
+                    <option value="socials">Facebook Ad</option>
+                    <option value="friends">Friends/Family</option>
+                    <option value="">Youtube</option>
+                    <option value="others">Others</option>
+                  </select>
+                </label>
+                <button
+                  type="submit"
+                  class="btn btn--submit"
+                  name="signup__button"
+                >
+                  Sign up
+                </button>
+              </div>
+            </form>
+          </div>
+          <div class="cta__container--right"></div>
+        </div>
+      </section>
+      <section class="section__faq section" id="faq">
+        <div class="faq__container">
+          <h2 class="faq__heading section__heading">
+            Frequently Asked Questions
+          </h2>
+          <div class="faq__summary">
+            <div class="faq__question">
+              <h3 class="faq__title">
+                What qualifications do your teachers have?
+              </h3>
+              <span class="icon--faq"
+                ><i class="fa-solid fa-chevron-down"></i
+              ></span>
+            </div>
+            <p class="faq__content">
+              We take recruitment seriously: our teachers must have a
+              professional certificate and at least 2 years' experience. We also
+              pay special attention to their pronunciation to make sure their
+              accent is not too strong. All our teachers do an internship before
+              starting work with us, and then attend regular professional
+              development training.
+            </p>
+          </div>
+          <div class="faq__summary">
+            <div class="faq__question">
+              <h3 class="faq__title">
+                What do I need to study English at FLUENCY?
+              </h3>
+              <span class="icon--faq"
+                ><i class="fa-solid fa-chevron-down"></i
+              ></span>
+            </div>
+            <p class="faq__content">
+              Our online English courses are made to be accessible to everyone.
+              All you need is a computer with a web-browser, or a smartphone
+              with the Fluency app, internet access, headphones (with microphone
+              for speaking exercises) and a little commitment. We'll take care
+              of the rest and help you configure everything when you sign up.
+            </p>
+          </div>
+          <div class="faq__summary">
+            <div class="faq__question">
+              <h3 class="faq__title">
+                How long does it take to complete the English courses?
+              </h3>
+              <span class="icon--faq"
+                ><i class="fa-solid fa-chevron-down"></i
+              ></span>
+            </div>
+            <p class="faq__content">
+              The frequency of exercises and lessons depends on you as a
+              student, how much time you have and are willing to spend, and on
+              which course you choose. Fluency's patented method guarantees you
+              to level up in just 12 weeks, but many students are able to make
+              progress even faster.
+            </p>
+          </div>
+          <div class="faq__summary">
+            <div class="faq__question">
+              <h3 class="faq__title">
+                How do I continue studying after the trial lesson?
+              </h3>
+              <span class="icon--faq"
+                ><i class="fa-solid fa-chevron-down"></i
+              ></span>
+            </div>
+            <div class="faq__content">
+              Choose a convenient learning pace and book lessons. We'll support
+              you all the way.
+              <ol>
+                <li>Purchase a subscription in your personal account.</li>
+                <li>
+                  Choose a teacher — keep the teacher from your trial lesson, or
+                  choose a new one! At FLUENCY, you can always find an
+                  experienced teacher for your level and personality.
+                </li>
+                <li>
+                  Create a schedule and start looking forward to the next
+                  lessons.
+                </li>
+              </ol>
+            </div>
+          </div>
+          <div class="faq__summary">
+            <div class="faq__question">
+              <h3 class="faq__title">
+                What type of English courses can I take?
+              </h3>
+              <span class="icon--faq"
+                ><i class="fa-solid fa-chevron-down"></i
+              ></span>
+            </div>
+            <div class="faq__content">
+              If your goal is to successfully pass the TOEFL or TOEIC test,
+              study English for a trip, or speak business English confidently,
+              then common English phrases are often not enough. That's why we
+              have developed tailored courseware that gives you specific
+              language skills in a hands-on way. In these specialized online
+              English courses, with the support of our expert teachers, you will
+              acquire exactly the knowledge you need. We provide:
+              <ul>
+                <li>General English</li>
+                <li>Business English</li>
+                <li>TOEFL</li>
+                <li>TOEIC.</li>
+              </ul>
+            </div>
+          </div>
+          <p class="faq__contact">
+            Do you have more questions? Don't hesitate to contact us!
+          </p>
+        </div>
+      </section>
+    </main>
+    <footer class="section__footer">
+      <div class="footer__container">
+        <div class="socials__container">
+          <a href="#top"
+            ><img
+              class="company__logo"
+              src="images/icons/logo.png"
+              alt="Fluency logo"
+          /></a>
+          <div class="social__icons">
+            <a
+              href="https://www.instagram.com/"
+              target="_blank"
+              aria-label="Visit Instagram profile"
+              ><i class="fa-brands fa-instagram icon--social"></i
+            ></a>
+            <a
+              href="https://www.facebook.com/"
+              target="_blank"
+              aria-label="Visit Facebook profile"
+              ><i class="fa-brands fa-square-facebook icon--social"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/in/"
+              target="_blank"
+              aria-label="Visit LinkedIn profile"
+              ><i class="fa-brands fa-linkedin icon--social"></i
+            ></a>
+          </div>
+        </div>
+        <div class="map__container">
+          <h4 class="footer__heading">Find us</h4>
+          <div class="map" id="map"></div>
+        </div>
+        <div class="contacts__container">
+          <h4 class="footer__heading">Contact us</h4>
+          <address>
+            <p class="contacts__address">7. Juli 28B/5, 18000 Niš, Serbia</p>
+            <a href="tel:+381629636143" class="contacts__tel nav__link"
+              >Tel. +381 62 96 36 143</a
+            >
+            <a
+              href="mailto:laurantnvt@gmail.com"
+              class="contacts__mail nav__link"
+              >laurantnvt@gmail.com</a
+            >
+          </address>
+        </div>
+        <div class="company__container">
+          <h4 class="footer__heading">Company</h4>
+          <nav class="company__nav">
+            <ul class="company__nav--list">
+              <li class="company__nav--item">
+                <a href="#" class="nav__link">About us</a>
+              </li>
+              <li class="company__nav--item">
+                <a href="#" class="nav__link">Business inquiries</a>
+              </li>
+              <li class="company__nav--item">
+                <a href="#" class="nav__link">Partners</a>
+              </li>
+              <li class="company__nav--item">
+                <a href="#" class="nav__link">Careers</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="resources__container">
+          <h4 class="footer__heading">Resources</h4>
+          <nav class="resources__nav">
+            <ul class="resources__nav--list">
+              <li class="resources__nav--item">
+                <a href="#" class="nav__link">Help center</a>
+              </li>
+              <li class="resources__nav--item">
+                <a href="#" class="nav__link">Privacy and terms</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <p class="copyright__text">
+        Copyright © 2023 by Omnifood, Inc. All rights reserved.
+      </p>
+    </footer>
+  </body>
+</html>

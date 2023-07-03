@@ -1,0 +1,546 @@
+/*BELOW 1700px*/
+@media (max-width: 106.25em) {
+  .hero__heading {
+    font-size: 7rem;
+  }
+
+  .testimonial__text {
+    font-size: 2.4rem;
+  }
+
+  .pricelist__card {
+    width: 45rem;
+  }
+
+  .pricelist__benefits {
+    font-size: 2.2rem;
+  }
+
+  .icon--price {
+    font-size: 2.4rem;
+  }
+}
+
+/*BELOW 1560px*/
+@media (max-width: 97.5em) {
+  html {
+    font-size: 43.75%;
+  }
+
+  .header {
+    height: 14rem;
+  }
+
+  .testimonial__title {
+    margin-bottom: 10rem;
+  }
+
+  .testimonial__text {
+    font-size: 2.6rem;
+  }
+
+  .pricelist__title {
+    font-size: 3rem;
+  }
+
+  .pricelist__card {
+    max-width: 60rem;
+  }
+
+  .pricelist__prices {
+    font-size: 2.4rem;
+  }
+
+  .price--lesson p,
+  .price--month p {
+    font-size: 2.6rem;
+  }
+
+  .pricelist__benefits {
+    font-size: 2.4rem;
+  }
+
+  .cta__description {
+    font-size: 3rem;
+  }
+
+  .btn--submit {
+    padding: 2rem 1rem;
+    font-size: 2.4rem;
+  }
+
+  .form__control label {
+    font-size: 2.4rem;
+  }
+
+  .form__control input,
+  .form__control select {
+    font-size: 2.4rem;
+    padding: 1.6rem 2rem;
+  }
+
+  .faq__title {
+    font-size: 3.4rem;
+  }
+}
+
+/*BELOW 1232px*/
+@media (max-width: 77em) {
+  html {
+    font-size: 37.5%;
+  }
+
+  .testimonial__text {
+    font-size: 2.4rem;
+  }
+
+  .pricelist__title {
+    font-size: 3rem;
+  }
+
+  .pricelist__prices {
+    font-size: 2.4rem;
+  }
+
+  .price--lesson p,
+  .price--month p {
+    font-size: 2.6rem;
+  }
+}
+
+/*BELOW *992px*/
+@media (max-width: 60em) {
+  html {
+    font-size: 31.25%;
+  }
+
+  /*MOBILE NAVIGATION*/
+  .btn__mobile--nav {
+    display: block;
+    z-index: 1001;
+  }
+
+  .btn__mobile--nav .icon--close {
+    display: none;
+  }
+  .btn__mobile--nav .icon--menu {
+    display: block;
+  }
+
+  .main__nav {
+    background-color: var(--primary-color);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    z-index: 1000;
+    transition: all 0.2s ease-out;
+    transform: translateX(-100%);
+    visibility: hidden;
+    pointer-events: none;
+  }
+
+  .nav--open .main__nav {
+    transform: translateX(0%);
+    visibility: visible;
+    pointer-events: auto;
+  }
+
+  .nav--open .icon--close {
+    display: block;
+  }
+
+  .nav--open .icon--menu {
+    display: none;
+  }
+
+  .nav__list {
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 4rem 0;
+    gap: 4rem;
+    font-size: 4rem;
+  }
+
+  .btn--tryout:link,
+  .btn--login:link,
+  .btn--tryout:visited,
+  .btn--login:visited {
+    border-radius: 4rem;
+  }
+
+  .partner__logo--wu {
+    display: none;
+  }
+
+  .cta__description {
+    font-size: 3rem;
+  }
+}
+
+/*BELOW 790px*/
+
+@media (max-width: 49.375em) {
+  html {
+    font-size: 25%;
+  }
+
+  .section__title {
+    font-size: 7.4rem;
+  }
+
+  .section__heading {
+    font-size: 3.6rem;
+  }
+
+  .icon--menu,
+  .icon--close {
+    font-size: 4.4rem;
+  }
+
+  .section__hero {
+    background-image: linear-gradient(#4a019dd0, #4a019dd0),
+      url('/images/hero-picture.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .hero__container {
+    grid-template-columns: 1fr;
+    column-gap: 0rem;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+    padding: 4rem;
+  }
+
+  .hero__title {
+    font-size: 10rem;
+  }
+
+  .hero__description {
+    font-size: 4rem;
+  }
+
+  .hero__img--container {
+    display: none;
+  }
+
+  .hero__buttons {
+    align-self: center;
+    font-size: 3.2rem;
+  }
+
+  .partner__logos {
+    margin-top: 5rem;
+  }
+
+  .partner__logo {
+    max-width: 20rem;
+  }
+
+  .partner__logo--paypal {
+    display: none;
+  }
+
+  .feature__container {
+    grid-template-columns: 1fr;
+    column-gap: 0;
+    row-gap: 0;
+    align-items: center;
+    max-width: 100%;
+  }
+
+  .feature__text {
+    font-size: 4rem;
+  }
+
+  .feature__image {
+    display: none;
+  }
+
+  .feature__list {
+    width: 90rem;
+    justify-self: center;
+    max-width: 100%;
+  }
+
+  .feature__list--items {
+    font-size: 4rem;
+  }
+
+  .feature__icon {
+    width: 5rem;
+    height: 5rem;
+  }
+
+  .testimonial {
+    flex: 0 0 50%;
+  }
+
+  .testimonial__text {
+    font-size: 3rem;
+  }
+
+  .pricelist__container {
+    padding: 0;
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    row-gap: 6rem;
+    column-gap: 6rem;
+  }
+
+  .pricelist__card {
+    width: 140rem;
+    height: auto;
+  }
+
+  .pricelist__card:first-of-type {
+    justify-self: end;
+  }
+
+  .pricelist__card:nth-of-type(2) {
+    justify-self: start;
+  }
+
+  .pricelist__card:last-of-type {
+    grid-column: 1/-1;
+  }
+
+  .pricelist__prices,
+  .pricelist__benefits,
+  .pricelist__title,
+  .price--lesson p,
+  .price--month p {
+    font-size: 3.6rem;
+  }
+
+  .cta__container {
+    max-width: 100%;
+    grid-template-columns: 1fr;
+    max-height: 100%;
+    padding: 10rem;
+    gap: 10rem;
+  }
+
+  .cta__container--right {
+    display: none;
+  }
+
+  .cta__description {
+    font-size: 3.6rem;
+  }
+
+  .form__control input,
+  .form__control select {
+    padding: 3rem 2rem;
+    margin-top: 1rem;
+    font-size: 4rem;
+  }
+
+  .form__control label,
+  .form__control select {
+    font-size: 3.4rem;
+  }
+
+  .form__control:first-of-type,
+  .form__control:last-of-type {
+    gap: 4rem;
+  }
+
+  .btn--submit {
+    font-size: 3.4rem;
+    padding: 3.6rem 2rem;
+  }
+
+  .form__control input,
+  .form__control select {
+    border-radius: 2rem;
+  }
+
+  .faq__summary {
+    padding: 5rem;
+    border-radius: 8rem;
+  }
+
+  .faq__title {
+    font-size: 4rem;
+  }
+
+  .faq__content {
+    font-size: 3.4rem;
+  }
+
+  .footer__container {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    margin-bottom: 3rem;
+  }
+
+  .socials__container {
+    padding: 2rem;
+    grid-column: 1/-1;
+    grid-row: 1/2;
+  }
+
+  .icon--social {
+    font-size: 7rem;
+    padding: 4rem;
+  }
+
+  .footer__heading {
+    font-size: 4rem;
+    margin-bottom: 3.6rem;
+  }
+
+  .contacts__container,
+  .company__container,
+  .resources__container,
+  .map__container {
+    padding: 0 2rem;
+  }
+
+  .contacts__container address,
+  .company__nav--item,
+  .resources__nav--item,
+  .copyright__text {
+    font-size: 3rem;
+  }
+
+  .company__logo {
+    width: 25rem;
+  }
+}
+
+/*BELOW 592px*/
+@media (max-width: 37em) {
+  html {
+    font-size: 20%;
+  }
+  .section__title {
+    font-size: 7rem;
+  }
+
+  .section__heading {
+    font-size: 4rem;
+  }
+
+  .feature__list {
+    width: 86rem;
+  }
+
+  .testimonial {
+    flex: 0 0 100%;
+    margin: 0;
+  }
+
+  .testimonial__text {
+    font-size: 3.4rem;
+  }
+
+  .testimonial__image {
+    width: 18rem;
+  }
+
+  .pricelist__container {
+    padding: 0;
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    row-gap: 10rem;
+    justify-items: center;
+  }
+
+  .pricelist__card {
+    width: 100%;
+    max-width: 100%;
+    gap: 10rem;
+    height: 80rem;
+    padding: 10rem;
+    max-height: 100%;
+  }
+
+  .pricelist__title {
+    font-size: 6rem;
+  }
+
+  .pricelist__prices,
+  .price--lesson p,
+  .price--month p {
+    font-size: 5rem;
+  }
+
+  .pricelist__benefits {
+    font-size: 5rem;
+  }
+  .icon--price {
+    margin-right: 3rem;
+    font-size: 5rem;
+  }
+
+  .cta__description {
+    font-size: 4.4rem;
+  }
+
+  .form__control:first-child,
+  .form__control:last-child {
+    grid-template-columns: 1fr;
+  }
+
+  .form__control input,
+  .form__control select {
+    border-radius: 2rem;
+  }
+
+  .btn--submit {
+    width: 50%;
+    border-radius: 6rem;
+  }
+
+  .faq__summary {
+    padding: 6rem;
+    border-radius: 8rem;
+  }
+
+  #map {
+    height: 30rem;
+    width: 50rem;
+  }
+
+  .footer__container {
+    grid-template-rows: 0.5fr 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 10rem;
+  }
+
+  .footer__heading {
+    font-size: 5rem;
+    margin-bottom: 4rem;
+  }
+  .contacts__container address {
+    gap: 2rem;
+    font-size: 4rem;
+  }
+  .company__nav--list,
+  .resources__nav--list {
+    gap: 2rem;
+  }
+  .company__nav--item,
+  .resources__nav--item {
+    font-size: 4rem;
+  }
+
+  .partner__logo--bolt {
+    display: none;
+  }
+
+  .company__logo {
+    width: 30rem;
+  }
+}
